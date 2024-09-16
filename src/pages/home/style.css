@@ -3,23 +3,51 @@ body {
   height: 100vh;
   margin: 0px;
   padding: 0px;
+  display: grid;
+  place-items: center;
 }
 
-.custom_container{
+#resultado {
+  color: white;
+  font-size: 60px;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.custom_container {
   background-color: black;
+  max-width: 350px;
   padding: 20px;
-}
+  border: none;
+  border-radius: 2%;
 
-.yellow {
-  background: #ffa200;
-  color: #ffffff;
-}
+  .MuiButton-root {
+    color: #ffffff;
+    border-radius: 40px;
+    font-size: 25px;
+    height: 70px;
+    border: none;
+    transition: background-color 0.3s;
+    font-family: "Roboto Mono", monospace;
+  }
 
-.grey {
-  background: #464646;
-  color: #ffffff;
-}
+  .MuiButton-root:hover{
+    opacity: 70%;
+  }
 
-.softGrey {
-  background-color: #c0c0c0;
+  .yellow {
+    background: #e29002;
+    color: #ffffff;
+  }
+
+  .grey {
+    background: #464646;
+    color: #ffffff;
+  }
+
+  .softGrey {
+    background-color: #b8b8b8;
+    color: black;
+  }
 }

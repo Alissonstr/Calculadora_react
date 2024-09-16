@@ -3,12 +3,12 @@ import { Container, Button, Grid, Typography } from '@mui/material';
 
 function Home() {
   return (
-    <Container maxWidth="sm" disableGutters className="custom_container">
+    <Container maxWidth="12" disableGutters className="custom_container">
       <Typography variant="h4" align="right" id="resultado" gutterBottom>
         0
       </Typography>
 
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
 
         {/*linha 1*/}
         <Grid item xs={3}>
@@ -18,7 +18,7 @@ function Home() {
           <Button fullWidth variant="outlined" className="softGrey">c</Button>
         </Grid>
         <Grid item xs={3}>
-          <Button fullWidth variant="outlined" className="yellow">+/-</Button>
+          <Button fullWidth variant="outlined" className="softGrey">+/-</Button>
         </Grid>
         <Grid item xs={3}>
           <Button fullWidth variant="outlined" className="yellow">/</Button>
