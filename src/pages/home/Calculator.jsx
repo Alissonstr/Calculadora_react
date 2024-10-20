@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './style.css';
 import { Container, Button, Grid, Typography } from '@mui/material';
@@ -28,6 +29,7 @@ function getButtonClass(content) {
   return buttonStyles[content] || 'default';
 }
 
+// eslint-disable-next-line react/prop-types
 function Calculator({ currentNumber, handleButtonClick }) {
   const buttons = [
     ['<', 'c', '+/-', '/'],
@@ -38,30 +40,43 @@ function Calculator({ currentNumber, handleButtonClick }) {
   ];
 
   return (
-    <Container maxWidth="12" disableGutters className="custom_container">
-      <Typography variant="h4" align="right" id="resultado" gutterBottom>
-        {currentNumber || '0'}
-      </Typography>
+    <section>
+      <div className="header">
+        <div className='inner_header flex'>
+          <h1>placeholder</h1>
+        </div>
 
-      <Grid container spacing={1}>
-        {buttons.map((row, rowIndex) => (
-          <Grid container item key={rowIndex} spacing={1}>
-            {row.map((buttonContent, index) => (
-              <Grid item xs={buttonContent === '0' ? 6 : 3} key={index}>
-                <Button 
-                  fullWidth 
-                  variant="outlined" 
-                  className={getButtonClass(buttonContent)}
-                  onClick={() => handleButtonClick(buttonContent)}
-                >
-                  {buttonContent}
-                </Button>
+          <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 1200 320" preserveAspectRatio="none">
+
+              <path className="wave1" d="M0,160 Q200,80 400,160 T800,160 T1200,160 T1600,160 T2000,160 T2400,160 T2880,160 V320 H0 V160 Z" />
+              <path className="wave2" d="M0,160 Q180,120 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
+              <path className="wave3" d="M0,160 Q140,100 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
+              <path className="wave4" d="M0,160 Q60,140 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
+          </svg>
+        
+      </div>
+
+      <div className="content flex">
+        <Container maxWidth={false} disableGutters className="custom_container">
+          <Typography variant="h4" align="right" id="resultado" gutterBottom>
+            {currentNumber || '0'}
+          </Typography>
+
+          <Grid container spacing={1}>
+            {buttons.map((row, rowIndex) => (
+              <Grid container item key={rowIndex} spacing={1}>
+                {row.map((buttonContent, index) => (
+                  <Grid item xs={buttonContent === '0' ? 6 : 3} key={index}>
+                    <Button fullWidth variant="outlined" className={getButtonClass(buttonContent)}onClick={() => handleButtonClick(buttonContent)}>{buttonContent}</Button>
+                  </Grid>
+                ))}
               </Grid>
             ))}
           </Grid>
-        ))}
-      </Grid>
-    </Container>
+
+        </Container>
+      </div>
+    </section>
   );
 }
 

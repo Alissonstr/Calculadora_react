@@ -1,10 +1,6 @@
 body {
-  background: linear-gradient(#3e3d40, #2f2e43);
-  height: 100vh;
   margin: 0px;
   padding: 0px;
-  display: grid;
-  place-items: center;
 }
 
 #resultado {
@@ -49,5 +45,69 @@ body {
   .softGrey {
     background-color: #b8b8b8;
     color: black;
+  }
+}
+
+.inner_header{
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(#e29002, #ff9100);
+  position: relative;
+  color: rgb(20, 19, 19);
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content{
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(#3e3d40, #2f2e43);
+}
+
+.waves{
+  width: 100%;
+  height: 40vh;
+  fill: #3e3d40;
+  margin-bottom: -4px;
+  background-repeat: repeat;
+}
+
+.wave1 {
+  opacity: 0.8;
+  animation: move-forever 7s ease-in-out infinite alternate;
+}
+
+.wave2 {
+  opacity: 0.6;
+  animation: move-forever 9s ease-in-out infinite alternate;
+}
+
+.wave3 {
+  opacity: 1;
+  animation: move-forever 5s ease-in-out infinite alternate;
+}
+
+.wave4 {
+  opacity: 0.4;
+  animation: move-forever 12s ease-in-out infinite alternate;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-100px, 0);
+  }
+  100% {
+    transform: translate(100px, 0);
   }
 }

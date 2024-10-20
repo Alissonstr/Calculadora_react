@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import Calculator from "./Calculator.jsx";
 
@@ -108,9 +109,9 @@ function Home() {
   };
 
   return (
-    <div>
-      <Calculator currentNumber={currentNumber} handleButtonClick={handleButtonClick} />
-    </div>
+      <div>
+        <Calculator currentNumber={currentNumber} handleButtonClick={handleButtonClick} />
+      </div>
   );
 }
 
