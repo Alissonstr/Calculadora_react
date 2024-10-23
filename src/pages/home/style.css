@@ -9,6 +9,8 @@ body {
   font-family: "Roboto Mono", monospace;
   padding-top: 10px;
   padding-bottom: 10px;
+  overflow-x: scroll;
+  scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
 }
 
 .custom_container {
@@ -56,7 +58,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(#e29002, #ff9100);
+  background: #ffffff;
   position: relative;
   color: rgb(20, 19, 19);
   text-align: center;

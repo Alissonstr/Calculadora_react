@@ -44,12 +44,14 @@ function Home() {
       addDigit(value);
     } else if (validOperators.includes(value)) {
       setOperatorFunction(value);
-    } else if (value === 'C') {
+    } else if (value === 'c') {
       clear();
     } else if (value === '<') {
       erase();
     } else if (value === '=') {
       calculate();
+    }else if (value === '+/-') {
+      setCurrentNumber(currentNumber * -1);
     }
   };
 
@@ -80,7 +82,7 @@ function Home() {
   };
 
   const calculate = () => {
-    if (operator === null || currentNumber === '' || oldNumber === '') return;
+    if (operator === null || currentNumber === '' || oldNumber === '') return setCurrentNumber(currentNumber * 1);
 
     const oldNum = parseFloat(oldNumber);
     const currentNum = parseFloat(currentNumber);
