@@ -8,6 +8,25 @@ function Home() {
   const [oldNumber, setOldNumber] = useState('');
 
   useEffect(() => {
+
+    // eslint-disable-next-line no-undef
+    window.revelar = ScrollReveal({reset:true})
+
+    // eslint-disable-next-line no-undef
+    revelar.reveal('.calculadora',{
+      duration: 2000,
+      distance: "100px"
+    })
+
+    window.addEventListener('wheel', function(e) {
+      e.preventDefault();
+      window.scrollBy({
+        top: e.deltaY * 10,
+        behavior: 'smooth'
+      });
+    }, { passive: false });
+
+
     const handleKeydown = (event) => {
       const keyToButtonMap = {
         '1': '1',

@@ -46,18 +46,18 @@ function Calculator({ currentNumber, handleButtonClick }) {
           <h1>placeholder</h1>
         </div>
 
-          <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 1200 320" preserveAspectRatio="none">
+          <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 1000 320" preserveAspectRatio="none">
 
               <path className="wave1" d="M0,160 Q200,80 400,160 T800,160 T1200,160 T1600,160 T2000,160 T2400,160 T2880,160 V320 H0 V160 Z" />
               <path className="wave2" d="M0,160 Q180,120 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
               <path className="wave3" d="M0,160 Q140,100 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
-              <path className="wave4" d="M0,160 Q60,140 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
+              <path className="wave4" d="M0,160 Q229,120 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
           </svg>
         
       </div>
 
       <div className="content flex">
-        <Container maxWidth={false} disableGutters className="custom_container">
+        <Container maxWidth={false} disableGutters className="container calculadora">
           <Typography variant="h4" align="right" id="resultado" gutterBottom>
             {currentNumber || '0'}
           </Typography>
