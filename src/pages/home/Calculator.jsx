@@ -2,6 +2,7 @@
 import React from 'react';
 import './style.css';
 import { Container, Button, Grid, Typography } from '@mui/material';
+import calculatorImage from '../../assets/vetor_calc.png';
 
 const buttonStyles = {
   '<': 'softGrey',
@@ -43,11 +44,11 @@ function Calculator({ currentNumber, handleButtonClick }) {
     <section>
       <div className="header">
         <div className='inner_header flex'>
-          <h1>placeholder</h1>
+          <h1>Bem vindo!</h1>
+          <img src={calculatorImage} className="calculatorImage"/>
         </div>
 
           <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="100 0 1000 320" preserveAspectRatio="none">
-
               <path className="wave1" d="M0,160 Q200,80 400,160 T800,160 T1200,160 T1600,160 T2000,160 T2400,160 T2880,160 V320 H0 V160 Z" />
               <path className="wave2" d="M0,160 Q180,120 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />
               <path className="wave3" d="M0,160 Q140,100 360,160 T720,160 T1080,160 T1440,160 T1800,160 T2160,160 T2880,160 V320 H0 V160 Z" />

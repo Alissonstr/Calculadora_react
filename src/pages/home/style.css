@@ -60,6 +60,9 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 60px;
+  font-family: "Anton SC", sans-serif;
+  color:rgb(87, 86, 83);
 }
 
 .header {
@@ -118,4 +121,9 @@ body {
   100% {
     transform: translate(100px, 0);
   }
+}
+.calculatorImage {
+  height: 600px;
+  padding-left: 300px;
+  padding-top: 150px;
 }
