@@ -44,7 +44,11 @@ function Calculator({ currentNumber, handleButtonClick }) {
     <section>
       <div className="header">
         <div className='inner_header flex'>
-          <h1>Bem vindo!</h1>
+          <div className="header_text">
+            <h1>Bem-vindo!</h1>
+            <p>Este site foi criado para aprofundar meus estudos em React e aprimorar habilidades em desenvolvimento front-end.</p>
+            <p>Espero que goste do resultado!</p>
+          </div>
           <img src={calculatorImage} className="calculatorImage"/>
         </div>
 

@@ -69,7 +69,14 @@ body {
   background: #ffffff;
   position: relative;
   color: rgb(20, 19, 19);
-  text-align: center;
+}
+
+.header_text {
+  flex-direction: column;
+  font-size: 40px;
+  margin-left: 170px;
+  margin-top: 90px;
+  text-align: left;
 }
 
 .flex{
@@ -126,4 +133,6 @@ body {
   height: 600px;
   padding-left: 300px;
   padding-top: 150px;
+  filter: hue-rotate(25deg);
+
 }
